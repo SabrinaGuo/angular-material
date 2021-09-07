@@ -7,27 +7,27 @@ import { UiBookstoryMenuItem } from 'src/app/utility/interfaces/ui-bookstory-men
 export class UiBookstoryService {
   menuItems: UiBookstoryMenuItem[] = [
     {
-      labelTw: '首頁',
+      labelTw: 'Overview',
       labelEn: 'index',
       path: '/ui-bookstory', // 等同模組 routing 中的 path: ''
     },
     {
-      labelTw: '調色盤',
+      labelTw: 'Palettes',
       labelEn: 'colours',
       path: 'colours',
     },
     {
-      labelTw: '字型排版',
+      labelTw: 'Typography',
       labelEn: 'typography',
       path: 'typography',
     },
     {
-      labelTw: '按鈕',
+      labelTw: 'Button',
       labelEn: 'button',
       path: 'button',
     },
     {
-      labelTw: '輸入框',
+      labelTw: 'Input',
       labelEn: 'input',
       path: 'input',
     },

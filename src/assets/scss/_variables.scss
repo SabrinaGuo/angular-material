@@ -1,0 +1,73 @@
+$gold-300: #d0bb8d;
+$white-500: #fff;
+$gold-200: #e4d8be;
+$gray-500: #666;
+$black-400: #333;
+$black-500: #000;
+$gold-400: #c3a86c;
+$gray-300: #808080;
+$pink-500: #cf7480;
+$blue-500: #6b95a8;
+$green-500: #679482;
+$gray-100: #ccc;
+$gold-500: #bc9e5c;
+$gray-700: #858585;
+$gray-600: #4a4a4a;
+$gray-150: #9b9b9b;
+$gold-450: #cfb866;
+$gold-350: #d9c88b;
+$gold-250: #d8c686;
+$gray-450: #6d6d6d;
+$gold-325: #e5dab3;
+$gray-250: #909090;
+$red-500: #d7371e;
+$red-600: #bb3b27;
+$red-700: #ad3d2b;
+$gray-70: #f3f3f3;
+$gray-50: #f1f1f1;
+$gray-80: #e3e3e3;
+$gold-600: #b99515;
+
+$mainColor: $gold-500, $gold-300, $gold-200, $gray-450, $gray-700, $gray-150,
+  $gray-80;
+$secondaryColor: $green-500, $blue-500, $pink-500;
+$textColor: $black-400, $gray-700, $gray-150, $white-500;
+
+$primary-button: $gold-500;
+$primary-button-hover: $gold-450;
+$primary-button-active: $gold-350;
+$primary-button-disable: $gray-100;
+
+$secondary-button: $gray-600;
+$secondary-button-hover: $gray-450;
+$secondary-button-active: $gray-250;
+$secondary-button-disable: $gray-100;
+
+$tertiary-button: $white-500;
+$tertiary-button-hover: $gold-325;
+$tertiary-button-active: $gold-250;
+$tertiary-button-disable: $white-500;
+$tertiary-button-border: $gold-500;
+$tertiary-button-disable-border: $gray-100;
+
+$danger-button: $red-500;
+$danger-button-hover: $red-600;
+$danger-button-active: $red-700;
+$danger-button-disable: $gray-100;
+
+$icon-border-button: $gray-50;
+$icon-border-button-hover: $gray-80;
+$icon-border-button-active: $gray-80;
+$icon-border-button-disable: $gray-100;
+$icon-border-button-border: $gray-100;
+$icon-border-button-disable-border: $gray-100;
+
+$icon-button: $gray-600;
+$icon-button-hover: $gray-450;
+$icon-button-active: $gray-250;
+$icon-button-disable: $gray-100;
+
+$button-text: $white-500;
+$button-disable-text: $gray-700;
+$button-tertiary-text: $gold-500;
+$button-icon-border-text: $black-400;

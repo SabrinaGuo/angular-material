@@ -1,0 +1,279 @@
+@import "~@angular/material/theming";
+
+@include mat-core();
+// Text 文字相關設定 ===============================
+.mat-h1,
+.mat-headline,
+.mat-typography h1 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.57px;
+  color: #333;
+  margin: 0;
+}
+.mat-h2,
+.mat-title,
+.mat-typography h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: 0.51px;
+  color: #333;
+  margin: 0;
+}
+.mat-h3,
+.mat-subheading-2,
+.mat-typography h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.13;
+  letter-spacing: 0.46px;
+  color: #333;
+  margin: 0;
+}
+.mat-h4,
+.mat-subheading-1,
+.mat-typography h4,
+.mat-body p,
+.mat-body-1 p,
+.mat-typography p {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.4px;
+  color: #333;
+  margin: 0;
+  &.errorText {
+    font-size: 12px;
+    line-height: 1;
+    color: #d7371e;
+  }
+}
+a {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #bc9e5c;
+}
+.errorText {
+  font-size: 12px;
+  line-height: 1;
+  color: #d7371e;
+}
+span {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0.4px;
+  color: #333;
+  margin: 0;
+  &.errorText {
+    font-size: 12px;
+    line-height: 1;
+    color: #d7371e;
+  }
+}
+
+// 內容空間設定 ===============================
+.ui_wrap {
+  display: flex;
+  width: 100%;
+  .meun-block {
+    max-width: 200px;
+    width: 100%;
+  }
+  .layout-content {
+    max-width: calc(100% -200px);
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.ui-meun {
+  max-width: 100%;
+  width: 100%;
+  font-size: 20px;
+  padding: 0px;
+  list-style: none;
+  line-height: normal;
+  border: 1px solid lightgray;
+  text-align: center;
+  margin: 0;
+  li {
+    border-bottom: 1px solid lightgray;
+    transition: all 0.3s;
+    &:last-child {
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: lightgray;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 20px 10px;
+    }
+  }
+}
+
+// button 設定 ===============================
+.mat-button,
+.mat-icon-button,
+.mat-stroked-button,
+.mat-flat-button {
+  &.custom-button {
+    min-width: 100px;
+  }
+}
+.custom-button {
+  &.primary-button {
+    background-color: $primary-button;
+    transition: all 0.3s;
+    span {
+      color: $button-text;
+    }
+    &:hover {
+      background-color: $primary-button-hover;
+    }
+    &:active {
+      background-color: $primary-button-active;
+    }
+    &:disabled {
+      background-color: $primary-button-disable;
+      span {
+        color: $button-disable-text;
+      }
+    }
+  }
+  &.secondary-button {
+    background-color: $secondary-button;
+    transition: all 0.3s;
+    span {
+      color: $button-text;
+    }
+    &:hover {
+      background-color: $secondary-button-hover;
+    }
+    &:active {
+      background-color: $secondary-button-active;
+    }
+    &:disabled {
+      background-color: $secondary-button-disable;
+      span {
+        color: $button-disable-text;
+      }
+    }
+  }
+  &.tertiary-button {
+    background-color: $tertiary-button;
+    transition: all 0.3s;
+    border: solid 1px $tertiary-button-border;
+    span {
+      color: $button-tertiary-text;
+    }
+    &.mat-stroked-button {
+      border: solid 1px $tertiary-button-border;
+    }
+    &:hover {
+      background-color: $tertiary-button-hover;
+    }
+    &:active {
+      background-color: $tertiary-button-active;
+    }
+    &:disabled {
+      background-color: $tertiary-button-disable;
+      span {
+        color: $button-disable-text;
+      }
+      &.mat-stroked-button {
+        border: solid 1px $tertiary-button-disable-border;
+      }
+    }
+  }
+  &.danger-button {
+    background-color: $danger-button;
+    transition: all 0.3s;
+    span {
+      color: $button-text;
+    }
+    &:hover {
+      background-color: $danger-button-hover;
+    }
+    &:active {
+      background-color: $danger-button-active;
+    }
+    &:disabled {
+      background-color: $danger-button-disable;
+      span {
+        color: $button-disable-text;
+      }
+    }
+  }
+  &.icon-border-button {
+    background-color: $icon-border-button;
+    transition: all 0.3s;
+    border: solid 1px $icon-border-button-border;
+    span {
+      color: $button-icon-border-text;
+    }
+    &.mat-stroked-button {
+      border: solid 1px $icon-border-button-border;
+    }
+    &:hover {
+      background-color: $icon-border-button-hover;
+    }
+    &:active {
+      background-color: $icon-border-button-active;
+    }
+    &:disabled {
+      background-color: $icon-border-button-disable;
+      span {
+        color: $button-disable-text;
+      }
+      &.mat-stroked-button {
+        border: solid 1px $icon-border-button-disable-border;
+      }
+    }
+  }
+  &.icon-button {
+    background-color: $icon-button;
+    transition: all 0.3s;
+    span {
+      color: $button-text;
+    }
+    &:hover {
+      background-color: $icon-button-hover;
+    }
+    &:active {
+      background-color: $icon-button-active;
+    }
+    &:disabled {
+      background-color: $icon-button-disable;
+      span {
+        color: $button-disable-text;
+      }
+    }
+  }
+}
+// icon 設定 ===============================
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  &.ic-garbage {
+    background: url("../../images/ic-garbage.svg") center no-repeat;
+    background-size: contain;
+  }
+  &.ic-garbage-gray {
+    background: url("../../images/ic-garbage-gray.svg") center no-repeat;
+    background-size: contain;
+  }
+  &.ic-add-white {
+    background: url("../../images/ic-add-white.svg") center no-repeat;
+    background-size: contain;
+  }
+  &.ic-add-gray {
+    background: url("../../images/ic-add-gray.svg") center no-repeat;
+    background-size: contain;
+  }
+}

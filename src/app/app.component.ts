@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = '專案名稱';
+  title = 'material - 中租';
 
   constructor(private titleService: Title) {}
 

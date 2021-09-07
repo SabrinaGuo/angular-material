@@ -1,0 +1,23 @@
+.typography-container {
+  .table-head {
+    border-bottom: solid 2px #a494e1;
+    text-align: center;
+    padding: 8px 0;
+  }
+  .table-body {
+    div {
+      height: 30px;
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      a {
+        line-height: 30px;
+      }
+    }
+    &:nth-child(odd) {
+      background-color: rgb(233, 230, 230);
+    }
+  }
+}

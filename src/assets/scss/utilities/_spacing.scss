@@ -21,7 +21,7 @@ The third represents the spacing value (which you can give your own)
 For eg: 'mb-0' means margin-bottom: 0;
 */
 
-$spacing: 0, 2, 3, 4, 5, 10, 15, 20, 24, 25, 30, 35, 40, 100; // Modify this to generate your spacing classes
+$spacing: 0, 2, 3, 4, 5, 8, 10, 15, 20, 24, 25, 30, 35, 40, 100; // Modify this to generate your spacing classes
 $unit: px; // Modify this to specify your unit eg: em, pt, %.
 
 $directions: (

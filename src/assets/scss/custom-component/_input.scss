@@ -1,2 +1,123 @@
-.test {
+.mat-form-field-appearance-outline {
+  &.mat-focused {
+    .mat-form-field-outline-thick {
+      color: #bc9e5c;
+    }
+  }
+  .mat-form-field-outline {
+    color: #bc9e5c;
+    &.mat-focused,
+    &:active {
+      color: #bc9e5c;
+      input.mat-input-element {
+        color: #333;
+      }
+    }
+  }
+}
+
+.mat-form-field-underline {
+  //原先底線
+  display: none;
+}
+.mat-form-field-label {
+  color: #858585;
+}
+input {
+  &.mat-input-element {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    color: #858585;
+    margin-top: 0;
+  }
+}
+.mat-form-field {
+  &.mat-focused {
+    .mat-form-field-label {
+      color: #333;
+      display: none;
+    }
+  }
+}
+
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-outline-gap {
+  border-top-color: unset !important;
+}
+.mat-form-field-appearance-outline.mat-form-field-can-float.mat-form-field-should-float
+  .mat-form-field-label,
+.mat-form-field-appearance-outline.mat-form-field-can-float
+  .mat-input-server:focus
+  + .mat-form-field-label-wrapper
+  .mat-form-field-label {
+  display: none;
+}
+
+.mat-form-field-infix {
+  //補上缺失的線條
+  border-top: none;
+  margin-top: 2px;
+}
+
+.mat-form-field-label-wrapper {
+  top: -8px;
+}
+
+//=============================================
+.custom-form {
+  min-width: 150px;
+  max-width: 315px;
+  width: 100%;
+  .mat-error {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #333;
+  }
+  .mat-form-field-appearance-outline {
+    .mat-form-field-flex {
+      margin-top: 0;
+      padding: 0 1rem;
+    }
+    .mat-form-field-outline-start {
+      border: 2px solid currentColor;
+      border-right-style: none;
+    }
+    .mat-form-field-outline-end {
+      border: 2px solid currentColor;
+      border-left-style: none;
+    }
+    .mat-form-field-outline-gap {
+      border: 2px solid currentColor;
+      border-right-style: none;
+      border-left-style: none;
+    }
+    .mat-form-field-subscript-wrapper {
+      position: initial;
+    }
+
+    .mat-form-field {
+      &.mat-warn {
+        .mat-input-element {
+          color: #333;
+        }
+      }
+    }
+
+    .mat-form-field-invalid {
+      .mat-input-element {
+        color: #333;
+      }
+    }
+  }
+
+  .mat-form-field-can-float
+    .mat-form-field-autofill-control:-webkit-autofill
+    + .mat-form-field-label-wrapper
+    .mat-form-field-label {
+    display: none;
+  }
+}
+
+.custom-full-width {
+  width: 100%;
 }

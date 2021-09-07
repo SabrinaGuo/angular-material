@@ -1,28 +1,67 @@
-<section>
-  <div class="example-label">Basic</div>
-  <div class="example-button-row">
-    <button mat-button>Basic</button>
-    <button mat-button color="primary">Primary</button>
-    <button mat-button color="accent">Accent</button>
-    <button mat-button color="warn">Warn</button>
-    <button mat-button disabled>Disabled</button>
-    <a mat-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
-<mat-divider></mat-divider>
-<section>
-  <div class="example-label">Raised</div>
-  <div class="example-button-row">
-    <button mat-raised-button>Basic</button>
-    <button mat-raised-button color="primary">Primary</button>
-    <button mat-raised-button color="accent">Accent</button>
-    <button mat-raised-button color="warn">Warn</button>
-    <button mat-raised-button disabled>Disabled</button>
-    <a mat-raised-button href="https://www.google.com/" target="_blank">Link</a>
-  </div>
-</section>
-<mat-divider></mat-divider>
-<section>
+<div class="buttons-container d-flex flex-wrap">
+
+
+  <section class="ma-10">
+    <div class="example-label">Primary</div>
+    <div class="example-button-row">
+      <button mat-flat-button class="custom-button primary-button mr-10 mb-10">Button</button>
+      <br>
+      <button mat-flat-button disabled class="custom-button primary-button">Disabled</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section class="ma-10">
+    <div class="example-label">Secondary</div>
+    <div class="example-button-row">
+      <button mat-flat-button class="custom-button secondary-button mr-10 mb-10">Button</button>
+      <br>
+      <button mat-flat-button disabled class="custom-button secondary-button">Disabled</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section class="ma-10">
+    <div class="example-label">Tertiary</div>
+    <div class="example-button-row">
+      <button mat-stroked-button class="custom-button tertiary-button mr-10 mb-10">Button</button>
+      <br>
+      <button mat-stroked-button disabled class="custom-button tertiary-button">Disabled</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section class="ma-10">
+    <div class="example-label">Danger</div>
+    <div class="example-button-row">
+      <button mat-flat-button class="custom-button danger-button mr-10 mb-10">Button</button>
+      <br>
+      <button mat-flat-button disabled class="custom-button danger-button">Disabled</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section class="ma-10">
+    <div class="example-label">icon+button</div>
+    <div class="example-button-row">
+      <button mat-stroked-button class="custom-button icon-border-button mr-10 mb-10"><i
+          class="ic-garbage icon"></i>Button</button>
+      <br>
+      <button mat-stroked-button disabled class="custom-button icon-border-button"><i
+          class="ic-garbage-gray icon"></i>Disabled</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+  <section class="ma-10">
+    <div class="example-label">icon+button2</div>
+    <div class="example-button-row">
+      <button mat-flat-button class="custom-button icon-button mr-10 mb-10"><i
+          class="ic-add-white icon"></i>Button</button>
+      <br>
+      <button mat-flat-button disabled class="custom-button icon-button"><i
+          class="ic-add-gray icon"></i>Disabled</button>
+    </div>
+  </section>
+  <mat-divider></mat-divider>
+</div>
+
+<!-- <section>
   <div class="example-label">Stroked</div>
   <div class="example-button-row">
     <button mat-stroked-button>Basic</button>
@@ -45,7 +84,7 @@
     <a mat-flat-button href="https://www.google.com/" target="_blank">Link</a>
   </div>
 </section>
-<mat-divider></mat-divider>
+<mat-divider></mat-divider> -->
 <section>
   <div class="example-label">Icon</div>
   <div class="example-button-row">
